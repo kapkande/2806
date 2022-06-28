@@ -25,6 +25,7 @@
         color: #F2785C;
         text-transform: uppercase;
         margin: 0;
+        text-transform: uppercase;
     }
     
     header {
@@ -264,6 +265,7 @@
         font-weight: 500;
         font-size: 32px;
         line-height: 42px;
+        text-transform: uppercase;
     }
     
     .destinations__point {
