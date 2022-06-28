@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
     <title>Travel</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/plane.svg">
     <link rel="stylesheet" href="./css/my_website.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,34 +15,36 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="logo">
-                <div class="logo__img">
-                    <img src="img/logo.svg" alt="logo">
+            <div class="wrap">
+                <div class="logo">
+                    <div class="logo__img">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <div class="logo__text">Travel Portal</div>
                 </div>
-                <div class="logo__text">Travel Portal</div>
-            </div>
-            <nav class="menu">
-                <ul class="menu__row">
-                    <li>
-                        <a class="menu__link" href="">How It Works</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="">Plan Your Trip</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="">Destinations</a>
-                    </li>
-                    <li>
-                        <a class="menu__link" href="">Travel Stories</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="menu__btn-log">
-                <button>Login</button>
+                <nav class="menu">
+                    <ul class="menu__row">
+                        <li>
+                            <a class="menu__link" href="">How It Works</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#Plan">Plan Your Trip</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#destinations">Destinations</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#storis">Travel Stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__btn-log">
+                    <button>Login</button>
+                </div>
             </div>
         </header>
         <main>
-            <section class="preview">
+            <section id="preview" class="preview">
                 <picture class="preview__back__imge">
                     <source media="(max-width: 886px)" srcset="img/im_for_phone.jpg">
                     <source media="(min-width: 887px)" srcset="img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg">
@@ -53,14 +54,14 @@
                     <h1 class="preview__title">Explore the beauty of <br> the World</h1>
                     <div class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</div>
                     <div class="preview__row">
-                        <input  class="preview__search" type="text" placeholder="What would you like to do?">
+                        <input class="preview__search" type="text" placeholder="What would you like to do?"></input>
                         <div class="preview__btn">
                             <button>Start Planning</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="steps">
+            <section id="Plan" class="steps">
                 <div class="wrap">
                     <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
                     <div class="steps__row">
@@ -79,7 +80,7 @@
                     </div>
                 </div>
             </section>
-            <section class="destinations">
+            <section id="destinations" class="destinations">
                 <div class="wrap">
                     <h2>POPULAR DESTINATIONS</h2>
                     <div class="destinations__slider">
@@ -111,7 +112,7 @@
                     </div>
                 </div>
             </section>
-            <section class="stories">
+            <section id="storis" class="stories">
                 <picture class="storis__back__imge">
                     <source class="back__img" media="(max-width: 886px)" srcset="img/im_for_phone.jpg">
                     <source class="back__img" media="(min-width: 887px)" srcset="img/Rectangle33.jpg">
@@ -174,24 +175,26 @@
             </section>
         </main>
         <footer>
-            <p class="footer__text" >All Rights Reserved © Travel Portal</p> 
-            <ul class="footer__row">
-                <li>
-                    <a href="#">
-                        <img src="img/Vector.svg" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a class="rs_school" href="https://rs.school/js-stage0/">
-                        <img src="img/rs_school_js.svg" alt="rs_school">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/kapkande">
-                        <img style="width: 32px;" src="img/github_logo_icon_147285.svg" alt="github">
-                    </a>
-                </li>
-            </ul>
+            <div class="wrap">
+                <p class="footer__text">All Rights Reserved © Travel Portal</p>
+                <ul class="footer__row">
+                    <li>
+                        <a href="#">
+                            <img src="img/Vector.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rs_school" href="https://rs.school/js-stage0/">
+                            <img src="img/rs_school_js.svg" alt="rs_school">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kapkande">
+                            <img style="width: 32px;" src="img/github_logo_icon_147285.svg" alt="github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
     <script src="js/js.js"></script>
