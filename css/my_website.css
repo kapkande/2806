@@ -289,10 +289,10 @@
     }
     
     .destinations__btn button img {
-        margin: 0 0 0 11px;
+        margin: 0 -21px 0 -8px;
     }
-    
-     .destinations__textBtn p {
+    /*  */
+     .destinations__textBtn  {
         margin: 0 19px 0 0;
         font-family: 'Red Hat Text';
         font-style: normal;
@@ -301,7 +301,7 @@
         line-height: 32px;
         color: #FFFFFF;
     }
-    .storis__textBtn p {
+    .storis__textBtn {
         font-family: 'Red Hat Text';
         font-style: normal;
         font-weight: 500;
@@ -478,11 +478,9 @@
     }
     
     .storis__btn button img {
-        margin: 0 0 0 11px;
+        margin: 0 -21px 0 -8px;
     }
-    .storis__btn button p {
-        margin: 0 19px 0 0px;
-    }
+   
     .storis__textBtn {
         margin: 0 19px 0 0;
     }
