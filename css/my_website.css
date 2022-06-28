@@ -78,7 +78,6 @@
         height: 4px;
         width: 0;
         background-color: #0D606F;
-        ;
         transition: width 0.2s linear;
         border-radius: 10px;
         opacity: 0.4;
@@ -472,11 +471,28 @@
     
     .storis__link {
         font-weight: bold;
+        text-decoration: none;
     }
     
-    .storis__link:hover {
-        color: #0c09b3;
+    .storis__link::after {
+        display: block;
+        content: url("");
+        width: 100px;
+        height: 2px;
+        background-color: #04363f;
+        border-radius: 10px;
+        transition: all 0.4s;
+        top: -5px;
+        position: relative;
     }
+    
+    .storis__link:hover:after {
+        width: 120px;
+        background-color: #04363f;
+        transition: all 0.4s linear;
+    }
+    
+    .storis__link:hover {}
     
     .storis__text p a {
         color: #0D606F;
